@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+    //id 'kotlin-android'
+}
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Omage Micheal\\Documents\\mike.jks')
+            storePassword 'Abright123'
+            keyAlias 'mike'
+            keyPassword 'Abright123'
+        }
+    }
+    compileSdk 32
+    //buildToolsVersion 31
+    defaultConfig {
+        applicationId "com.dbright.SP"
+        minSdkVersion 21
+        targetSdk 32
+        versionCode 4
+        versionName '4.6'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        testFunctionalTest true
+        testHandleProfiling true
+        signingConfig signingConfigs.debug
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled true
+        }
+    }
+    dependenciesInfo {
+        includeInApk true
+    }
+    ndkVersion '24.0.8215888'
+    buildFeatures {
+        viewBinding true
+    }
+    buildToolsVersion '32.1.0-rc1'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'com.google.firebase.crashlytics'
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.google.android.gms:play-services-vision:20.1.3'
+    }
+}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.vorlonsoft:androidrate:1.2.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.9'
+    implementation 'com.google.firebase:firebase-analytics:20.1.0'
+    implementation 'com.google.firebase:firebase-perf:20.0.6'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    testImplementation 'junit:junit:4.13.2'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
+    implementation 'androidx.work:work-runtime-ktx:2.8.0-alpha01'
+
+}

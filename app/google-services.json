@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575186587533",
+    "project_id": "dttssp-563ff",
+    "storage_bucket": "dttssp-563ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575186587533:android:f30188312775b1b49837c4",
+        "android_client_info": {
+          "package_name": "com.dbright.SP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575186587533-cmvjpm1d6hpqbnfe1l6fv2m8jv1g98qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5BiBHpSy2Q-lUGLoDRGZAjihG75gk7b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575186587533-cmvjpm1d6hpqbnfe1l6fv2m8jv1g98qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

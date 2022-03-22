@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">DTTS(freemium)</string>
+    <string name="welcome_message">Hello my friend</string>
+    <string name="tdmark" translatable="true">Built by Dbright</string>
+    <string name="impt_note" translatable="true">More about DTTS</string>
+    <string name="info_dtts" translatable="true">
+        \t The DTTS application is a speech synthesis application that produces artificial production of human speech by receiving text and converting the text to speech,
+        not only that, it also has the ability to capture images and extract the text to read for you, which in other words it gives your phone the features to read through camera or directly from your
+        gallery. \n
+        \t The language the application can work with is English language.\n
+        \n\n
+
+        The previous version of the application was centered on only conversion of text to speech but in this current version you can actually read the text directly without the needs of typing it\n
+        Please note that application is not completely free instead it is a freemium application which might demand you to pay after certian number of usage. \n
+        This payment can either be done by paying with coinbase or paystack meaning you can either pay with any crypto currency of choice or you pay with naira. \n
+        Please after payment is completely processed a license code will be sent to your email address, which you can use to unlock the application for life \n
+        for more details feel free to reach me on \nwhatsapp : 08084121913 \n or \n email me at micheal@dbright.org\n\n
+
+        for more info on terms and condition and also privacy policy please check it on google play on the application section\n but on the next update of the application it will be added to the
+        application.
+
+    </string>
+    <string name="email">contact us at : micheal@dbright.org</string>
+
+    <string name="title_activity_second_frame">second_frame</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">About DTTS V4.5</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="todo">The button to either play or pause wav file</string>
+    <string name="msg1">Please enter your text here</string>
+
+    <string name="apology">
+        Hello user,\n
+        I am very sorry for restricting you from using the application, but you might need to pay before you can continue usage on the application.\n\n
+        Please pick your payment method \n
+        Just incase you have the license key please enter it below \n
+        else select one of your payment method below.\n
+    </string>
+
+
+</resources>

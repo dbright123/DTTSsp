@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Payment Section</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href = "css/bootstrap.rtl.min.css" rel = "stylesheet">
+
+      <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <link href = "bt/css/bootstrap.css" rel = "stylesheet">
+      <link href = "bt/css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap.rtl.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap.rtl.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-grid.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-grid.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-grid.rtl.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-grid.rtl.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-reboot.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-reboot.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-reboot.rtl.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-reboot.rtl.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-utilities.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-utilities.min.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-utilities.rtl.css" rel = "stylesheet">
+    <link href = "bt/css/bootstrap-utilities.rtl.min.css" rel = "stylesheet">
+      <!-- Bootstrap core CSS -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="payment.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+
+    <img class="mb-4" src="img/updated_logo.png" alt="Company_Logo"  width="100">
+    <h1 class="h3 mb-3 fw-normal">Please select your payment options</h1><small>After paying then you can continue to use the application, but if you already have license key just type it in 👇👇</small>
+  <hr>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="If you have a license key please just input it here" id="key"></textarea>
+    <label for="key">license key</label>
+  </div>
+  <button type="button" onclick = "Lkey()" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+    <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+  </svg> </button>
+  <hr>
+  <div class="list-group">
+
+    <a href="https://commerce.coinbase.com/checkout/1016e432-6542-4fa3-ba09-014db168cc09" class="list-group-item list-group-item-action buy-with-crypto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+      <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
+    </svg> Pay with Cryptocurrency using Coinbase<br> <img src = "img/coinbase-logo.png" alt = "cbase" width = "50" /></a><br>
+    <a href="https://paystack.com/pay/dtts_payment" class="list-group-item list-group-item-action">Pay with PayStack<br> <img src="img/paystack.png" width = "70"/> </a><br>
+    <a onclick="Android.DTTS_Web()" href="http://dttsweb.epizy.com/" class="list-group-item list-group-item-action">Continue to use the free version<br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+    </svg> DTTS(Web)</a><br>
+
+  </div>
+
+</main>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src = "bt/js/bootstrap.bundle.js"></script>
+<script src = "bt/js/bootstrap.bundle.min.js"></script>
+<script src = "bt/js/bootstrap.esm.js"></script>
+<script src = "bt/js/bootstrap.esm.min.js"></script>
+<script src = "bt/js/bootstrap.js"></script>
+<script src = "bt/js/bootstrap.min.js"></script>
+  <script src = "https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+
+  <script>
+    function Lkey(){
+        var key = document.getElementById("key").value;
+        console.log(key);
+        Android.showToast(key);
+    }
+  </script>
+    
+  </body>
+</html>
